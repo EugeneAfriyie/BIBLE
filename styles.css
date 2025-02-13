@@ -80,12 +80,15 @@ main{
 
 .control-icon{
     font-size: 2rem;
-    background-color: #887d7d;
+    background-color: #ddd9d9;
     cursor: pointer;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .control-box p{
@@ -104,3 +107,27 @@ main{
     font-weight: 600;
     gap: 0.5rem;
 }
+
+.control-box i{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  
+
+    
+  }
+  
+  /* Apply styles for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    body {
+      background-color: lightblue;
+      font-size: 18px;
+    }
+  }
