@@ -14,13 +14,19 @@
 body{
 
      font-family: 'Poppins', sans-serif;
-     background-color: #5e5c5c;
+     /* background-color: #c5c1c1; */
+    background-color: #f1f1f1;
+
      width: 100vw;
      height: 100vh;
      display: flex;
      justify-content: center;
      align-content: center;
      padding-top: 2rem;
+}
+
+a{
+    text-decoration: none;
 }
 
 main{
@@ -30,24 +36,33 @@ main{
     background-color: #f1f1f1;
     display: grid;
     grid-template-rows:auto  1fr;
+    /* border: 1px solid #333; */
+
 }
 
 .page-name{
     font-size: 1.5rem;
     font-weight: 600;
     color: #333;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
+    /* border: 1px solid #333; */
+
 }
 .main-section{
+display: grid;
+grid-template-rows:auto auto ;
+/* border: 1px solid #333; */
+gap: 2rem;
 
 }
 
 
 .verse-box{
     /* border: 1px solid #333; */
-    height: 55%;
-    width: 40rem;
+    /* height: 55%; */
+    width: 60%;
+    /* width: 40rem; */
     margin: auto;
     text-align: center;
 }
@@ -65,8 +80,9 @@ main{
 
 .control-box{
     /* border: 1px solid red; */
-    width: 35rem;
-    height: auto;
+    /* width: 35rem; */
+    width: 50%;
+    /* height: auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,7 +118,7 @@ main{
     margin-top: 1rem;
     background-color: black;
     color: white;
-    padding: .5rem 1rem;
+    padding: .7rem 1.2rem;
     border-radius: 20px;
     font-weight: 600;
     gap: 0.5rem;
@@ -110,7 +126,13 @@ main{
 
 .control-box i{
     font-size: 1.2rem;
-    font-weight: normal;
+    /* font-weight: 400; */
+}
+
+.stop-btn{
+    background-color: rgba(255, 0, 0, 0.493);
+    color: rgb(226, 23, 23);
+    border: none;
 }
 
 
@@ -120,14 +142,61 @@ main{
 
 @media (max-width: 768px) {
   
+    main{
+        padding: 0rem;
+    }
 
-    
+    .verse-box p{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .verse-box{
+        width: 70%;
+     
+    }
+
+    .control-box{
+       
+        width: 70%;
+    }
+
   }
   
-  /* Apply styles for screens larger than 1200px */
-  @media (min-width: 1200px) {
-    body {
-      background-color: lightblue;
-      font-size: 18px;
+  @media (max-width: 480px) {
+    .verse-box{
+        width: 90%;
+        margin-top: 5rem;
+     
     }
+
+    
+.page-name,.verse-box h3{
+    font-size: 1.2rem;
+}
+
+    body{
+        padding-top: 0.3rem;
+    }
+
+    .verse-box p{
+        font-size: 1.2rem;
+        margin-top: .2rem;
+    }
+
+    .control-box{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .control-box i{
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    .control-icon{
+        height: 2.5rem;
+        width: 2.5rem;
   }
+
+}
